@@ -52,7 +52,7 @@
 
   <script>
     async function checkout(productType) {
-      const res = await fetch('http://localhost:3000/create-checkout-session', {
+      const res = await fetch('https://boat-ramp-1.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ productType }),
